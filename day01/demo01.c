@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    printf("hello");
-    printf("gg");
+    printf("hello\n");
+    printf("gg\n");
+    printf("小比特大梦想\n");
     return 0;
 }
