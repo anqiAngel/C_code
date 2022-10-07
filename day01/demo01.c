@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 int main()
 {
     printf("hello\n");
     printf("gg\n");
-    printf("寮犻箯浼焅n");
-    printf("灏忔瘮鐗瑰ぇ姊︽兂\n");
+    printf("张鹏伟\n");
+    printf("小比特大梦想\n");
+    system("pause");
     return 0;
 }
