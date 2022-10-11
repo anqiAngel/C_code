@@ -1,11 +1,9 @@
-# include <stdio.h>
-
-extern global;
+#include <stdio.h>
 
 int main()
 {
     /* code */
-    printf("全局变量�?%d\n",global);
-    system("pause");
+    int global = 13;
+    printf("%d",global);
     return 0;
 }
