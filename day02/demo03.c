@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// #define定义的标识符常量
+// #define?????????????
 #define PI 3.14
 enum Sex{
     male = 3,
@@ -11,16 +11,16 @@ enum Sex{
 int main()
 {
     /* code */
-    // 字面常量
+    // ???泣??
     10;
     10.5;
-    // const修饰的常变量本质还是变量
+    // const???ε????????????????
     // const int a = 10;
     // a = 100;    
-    printf("PI的值%lf\n",PI);
-    printf("PI的值%d\n",male);
-    printf("PI的值%d\n",female);
-    printf("PI的值%d\n",secret);
+    printf("PI???%lf\n",PI);
+    printf("PI???%d\n",male);
+    printf("PI???%d\n",female);
+    printf("PI???%d\n",secret);
     system("pause");
     return 0;
 }
