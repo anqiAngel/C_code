@@ -12,6 +12,8 @@ int main()
         /* code */
         printf("%c\n",array2[i]);
     }
+    int a = 0;
+    printf("%d\n",~a);
     
     return 0;
 }
