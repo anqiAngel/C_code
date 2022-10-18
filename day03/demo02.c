@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include "demo01.c"
 // extern用来生命外部符号的
 extern int g;
 extern void test();
