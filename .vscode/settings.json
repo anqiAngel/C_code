@@ -3,6 +3,7 @@
         "stdio.h": "c",
         "string.h": "c",
         "iostream": "cpp",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "windows.h": "c"
     }
 }
