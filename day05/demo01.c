@@ -24,8 +24,8 @@ int main()
     //system("cal");
     int a = 10;
     int b = 20;
-    printf("交换前:%d %d");
+    printf("交换前:%d %d\n",a,b);
     swap(&a,&b);
-    printf("%d %d\n",a,b);
+    printf("交换后:%d %d\n",a,b);
     return 0;
 }

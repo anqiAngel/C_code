@@ -1,9 +1,10 @@
 {
     "files.associations": {
         "stdio.h": "c",
+        "add.h": "c",
+        "math.h": "c",
+        "windows.h": "c",
         "string.h": "c",
-        "iostream": "cpp",
-        "typeinfo": "c",
-        "windows.h": "c"
+        "sub.h": "c"
     }
 }
