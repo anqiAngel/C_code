@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-//递归求字符串长度
-
 int main()
 {
     /* code */
