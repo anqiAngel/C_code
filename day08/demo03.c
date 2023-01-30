@@ -27,11 +27,12 @@ int one_binary_total2(int num){
     return count;
     
 }
+
 int main()
 {
     /* code */
-    printf("%d\n",one_binary_total(4));
-    printf("%d\n",one_binary_total(3));
-    printf("%d\n",one_binary_total(7));
+    printf("%d\n",one_binary_total1(4));
+    printf("%d\n",one_binary_total1(3));
+    printf("%d\n",one_binary_total1(7));
     return 0;
 }
