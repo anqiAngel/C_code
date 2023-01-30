@@ -30,8 +30,8 @@ int my_strlen(const char * str){
 int main()
 {
     /* code */
-    char str1 [] = "xxxxxxxxxxx";
-    char  str2 [] = "hello";
+    char str1[] = "xxxxxxxxxxx";
+    char str2[] = "hello";
     // printf("%s\n",str1);
     my_strcpy(str1,str2);
     // strcpy(str1,str2);
