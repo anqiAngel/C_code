@@ -14,6 +14,7 @@ char* my_strcpy(char * dest,const char * src){
     }
     return ret;
 }
+
 // 健壮性=鲁棒性
 int my_strlen(const char * str){
     assert(str != NULL);
