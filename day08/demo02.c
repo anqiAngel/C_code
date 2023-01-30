@@ -3,7 +3,7 @@
 #include <assert.h>
 
 // 标准的C语言库函数实现
-char * my_strcpy(char * dest,const char * src){
+char* my_strcpy(char * dest,const char * src){
     assert(src != NULL);
     assert(dest != NULL);
     char * ret = dest; 
