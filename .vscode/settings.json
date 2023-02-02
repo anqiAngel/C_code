@@ -6,5 +6,6 @@
         "windows.h": "c",
         "string.h": "c",
         "sub.h": "c"
-    }
+    },
+    "EIDE.SerialPortMonitor.BaudRate": 9600
 }
