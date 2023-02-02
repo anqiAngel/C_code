@@ -100,6 +100,7 @@ int binary_different2(int num1,int num2){
     int count = one_binary_total1(ret);
     return count;   
 }
+
 // 按奇数偶数输出二进制位
 void binary_print(int num){
     /* code */
@@ -114,6 +115,7 @@ void binary_print(int num){
     }
     printf("\n");     
 }
+
 // 不用中间变量temp交换两数
 // 用异或
 // 两个相同的数异或为0 0异或任何数都等于任何数
