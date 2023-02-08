@@ -42,20 +42,20 @@ int min_mutiple3(int num1,int num2){
     int c = 0;//余数
     int t = 0;
     //判断a，b的大小，大的放在前面
-    if(num1>num2)
+    if(num1<num2)
     {
         int tmp = num1;
         num1 = num2;
         num2 = tmp;
     }
-    //因为最小公倍数=a*b/最大公约数
+    //因为最小公倍数=num1*num2/最大公约数
     //1.a*b
     t = num1 * num2;
     //2.最大公约数
     while(c=num1%num2)//如果余数不为零进入循环
     {
-        num1 = num2;//把被除数的值赋给除数
-        num2 = c;//把余数的值赋给被除数
+        num1 = num2;//把除数的值赋给被除数
+        num2 = c;//把余数的值赋给除数
     }
     t = t / num2;//最小公倍数
     return t;
