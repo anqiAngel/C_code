@@ -27,9 +27,9 @@ int main()
     // gets(str)读取一行 放到str中
     gets(str);
     int len = strlen(str);
+    // 1.字符串整体翻转
     string_reverse(str,str+len-1);
     printf("%s\n",str);
-    // 1.字符串整体翻转
     // 2.单词翻转
     char* start = str;
     while (*start)
@@ -47,6 +47,7 @@ int main()
             /* code */
             start = end+1;
         }else{
+            /* code */
             start = end;
         }
     }
