@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
+#include <float.h>
+
 
 int main()
 {
