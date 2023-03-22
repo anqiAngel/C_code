@@ -24,18 +24,20 @@ void menu(){
     printf("**********0.exit**********\n");
 }
 
-// 这样做比较麻烦
+double Calc(int (*fun)(int,int)){
+    int x = 0;
+    int y = 0;
+    printf("请输入2个操作数>:");
+    scanf("%d %d",&x, &y);
+    return fun(x, y);
+}
 
-int main()
+// 回调函数机制实现计算器
+int main(int argc, char const *argv[])
 {
     /* code */
-    // 函数指针
-    int (*pf1) (int, int) = Add;
-    int (*pf2) (int, int) = Sub;
-    // 函数指针数组
-    int (*pfArr[2]) (int, int) = {Add, Sub};
     int input = 0; 
-    do{
+        do{
         /* code */
         menu();
         int x = 0;
@@ -43,29 +45,27 @@ int main()
         double ret = 0;
         printf("请选择>:");
         scanf("%d",&input);
-        if (input == 1|input == 2|input == 3|input == 4)
-        {
-            /* code */
-            printf("请输入两个操作数:>");
-            scanf("%d %d",&x, &y);
-        }
         switch (input)
         {
             case 1:
                 /* code */
-                ret = Add(x,y); 
+                ret = Calc(Add);
+                printf("ret=%lf\n",ret); 
                 break;
             case 2:
                 /* code */
-                ret = Sub(x,y); 
+                ret = Calc(Sub);
+                printf("ret=%lf\n",ret); 
                 break; 
             case 3:
                 /* code */
-                ret = Mul(x,y); 
+                ret = Calc(Mul); 
+                printf("ret=%lf\n",ret);
                 break;
             case 4:
                 /* code */
-                ret = Div(x,y); 
+                ret = Calc(Div); 
+                printf("ret=%lf\n",ret);
                 break;
             case 0:
                 /* code */
@@ -75,12 +75,7 @@ int main()
                 printf("选择错误,重新选择!\n");
                 break;
         }
-        if (input == 1|input == 2|input == 3|input == 4)
-        {
-            /* code */
-            printf("ret=%lf\n",ret);
-        }
+
     } while (input);  
-    
     return 0;
 }
