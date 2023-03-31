@@ -1,7 +1,26 @@
 #include <stdio.h>
 #include <string.h>
-// 字符串左旋
+
+// 字符串左旋1
 void left_rotate_string1(char str[], int k)
+{   
+    for (int i = 0; i < k; i++)
+    {
+        /* code */
+        int len = strlen(str);
+        char tmp = *str;
+        for (int j = 0; j < len - 1; j++)
+        {
+            /* code */
+            *(str+j) = *(str+j+1);
+        }
+        *(str + len - 1) = tmp;  
+    }
+    
+}
+
+// 字符串左旋2
+void left_rotate_string2(char str[], int k)
 {   
     for (int i = 0; i < k; i++)
     {
