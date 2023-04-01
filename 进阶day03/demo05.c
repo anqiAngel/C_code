@@ -35,6 +35,11 @@ int is_string_rotate1(char *str1, char *str2)
 // 子串 str2是str1str1的子串就一定是str1左旋得到的
 int is_string_rotate2(char *str1, char *str2)
 {
+    if (strlen(str1) < strlen(str2) || strlen(str1) > strlen(str2))
+    {
+        /* code */
+        return 0;
+    }
     // 在str1后追加1个str1
     strncat(str1,str1,strlen(str1));
     // 判断str2是不是str1str1的子串
@@ -44,14 +49,14 @@ int is_string_rotate2(char *str1, char *str2)
         return 1;
     }
     return 0;
-    
+
 }
 
 int main()
 {
     /* code */
     char str1[] = "ABCDE";
-    char str2[] = "ABCDE";
+    char str2[] = "ABCD";
     int res = is_string_rotate1(str1,str2);
     if (res)
     {
