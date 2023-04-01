@@ -5,7 +5,7 @@
 // 暴力
 int is_string_rotate1(char *str1, char *str2)
 {
-    if (strlen(str1) < strlen(str2) || strlen(str1) > strlen(str2))
+    if (strlen(str1) != strlen(str2))
     {
         /* code */
         return 0;
@@ -35,7 +35,7 @@ int is_string_rotate1(char *str1, char *str2)
 // 子串 str2是str1str1的子串就一定是str1左旋得到的
 int is_string_rotate2(char *str1, char *str2)
 {
-    if (strlen(str1) < strlen(str2) || strlen(str1) > strlen(str2))
+    if (strlen(str1) != strlen(str2))
     {
         /* code */
         return 0;
