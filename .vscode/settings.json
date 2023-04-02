@@ -8,7 +8,8 @@
         "sub.h": "c",
         "stdbool.h": "c",
         "limits.h": "c",
-        "float.h": "c"
+        "float.h": "c",
+        "assert.h": "c"
     },
     "EIDE.SerialPortMonitor.BaudRate": 9600
 }
