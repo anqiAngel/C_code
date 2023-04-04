@@ -9,7 +9,8 @@
         "stdbool.h": "c",
         "limits.h": "c",
         "float.h": "c",
-        "assert.h": "c"
+        "assert.h": "c",
+        "cctype": "c"
     },
     "EIDE.SerialPortMonitor.BaudRate": 9600
 }

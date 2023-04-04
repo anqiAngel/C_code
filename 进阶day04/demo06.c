@@ -3,7 +3,41 @@
 #include <assert.h>
 
 // 实现strstr()
-char *my_strstr(const char *str1, const char *str2)
+char *my_strstr1(const char *str1, const char *str2)
+{
+    assert(str1 && str2);
+    if (*str2 == '\0')
+    {
+        /* code */
+        return (char*)str1;
+    }
+    const char *s1 = str1;
+    const char *s2 = str2;
+    char *cp = str1;
+    while (*cp)
+    {
+        /* code */
+        s1 = cp;
+        s2 = str2;
+        while (*s1 && *s2 && (*s1 == *s2))
+        {
+            /* code */
+            s1++;
+            s2++;
+        }
+        if (*str2 == '\0')
+        {
+            /* code */
+            return (char*)cp;
+        }
+        cp++;
+    }
+    return NULL;
+
+}
+
+// 实现strstr()
+char *my_strstr2(const char *str1, const char *str2)
 {
     assert(str1 && str2);
 }
