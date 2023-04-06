@@ -50,7 +50,9 @@ int main()
     // memcpy()函数应该拷贝不重叠的内存 可以拷贝没有重叠的内存
     // my_memcpy(arr1 + 2, arr1, 20);
     // memmove()函数可以处理内存重叠的情况
-    my_memmove(arr1 + 2, arr1, 20);
+    // my_memmove(arr1 + 2, arr1, 20);
+    // memcpy()函数应该拷贝不重叠的内存 但是VS库函数的实现也可以拷贝有重叠的内存 不是所有平台的memcpy()函数都是这样
+    memcpy(arr1 + 2, arr1, 20);
     for (int i = 0; i < 10; i++)
     {
         /* code */
