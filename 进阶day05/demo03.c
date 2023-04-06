@@ -25,14 +25,25 @@ struct C
     int i;
 };
 
+struct D
+{
+    /* data */
+    char c1;
+    struct C s1;
+    double d;
+};
+
+
 int main(int argc, char const *argv[])
 {
     /* code */
     struct A a1 = {0};
     struct B b1 = {0};
     struct C c1 = {0};
+    struct D d1 = {0};
     printf("%d\n",sizeof(a1)); // 12
     printf("%d\n",sizeof(b1)); // 8
     printf("%d\n",sizeof(c1)); // 24
+    printf("%d\n",sizeof(d1)); // 0 15 23
     return 0;
 }
