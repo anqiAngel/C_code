@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 // 联合体的定义
 union Un
@@ -14,12 +14,19 @@ union Un1
 {
     /* data */
     char a[5]; // 5
-    int i; // 4
+    int i;     // 4
 } un1;
 
+union Un2
+{
+    /* data */
+    short a[7]; // 14
+    int i;      // 4
+} un2;
 
 // 检查系统是大端存储还是小端存储 结构体解法
-int check_sys(){
+int check_sys()
+{
 
     union Un
     {
@@ -33,33 +40,34 @@ int check_sys(){
         /* code */
         // 小端返回0
         return 0;
-    }else
+    }
+    else
     {
         /* code */
         // 大端返回1
         return 1;
     }
-       
 }
-    
+
 int main(int argc, char const *argv[])
 {
     /* code */
     union Un u;
-    printf("%p\n",&u); 
-    printf("%p\n",&(u.c));
-    printf("%p\n",&(u.i));
-    printf("%d\n",sizeof(u)); // 4
+    printf("%p\n", &u);
+    printf("%p\n", &(u.c));
+    printf("%p\n", &(u.i));
+    printf("%d\n", sizeof(u)); // 4
     if (check_sys())
     {
         /* code */
         printf("大端存储\n");
-    }else
+    }
+    else
     {
         /* code */
         printf("小端存储\n");
     }
-    printf("%d\n",sizeof(un1)); // 8
+    printf("%d\n", sizeof(un1)); // 8
+    printf("%d\n", sizeof(un2)); // 16
     return 0;
-
 }
