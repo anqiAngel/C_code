@@ -11,7 +11,8 @@
         "float.h": "c",
         "assert.h": "c",
         "cctype": "c",
-        "errno.h": "c"
+        "errno.h": "c",
+        "stdlib.h": "c"
     },
     "EIDE.SerialPortMonitor.BaudRate": 9600
 }
