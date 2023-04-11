@@ -1,23 +1,23 @@
 # Summary
 
-Date : 2023-02-14 21:53:32
+Date : 2023-04-11 22:28:41
 
 Directory d:\\C_code
 
-Total : 64 files,  1609 codes, 277 comments, 277 blanks, all 2163 lines
+Total : 113 files,  3750 codes, 636 comments, 595 blanks, all 4981 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| C | 51 | 945 | 277 | 149 | 1,371 |
-| Markdown | 13 | 664 | 0 | 128 | 792 |
+| C | 94 | 2,223 | 636 | 330 | 3,189 |
+| Markdown | 19 | 1,527 | 0 | 265 | 1,792 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 64 | 1,609 | 277 | 277 | 2,163 |
+| . | 113 | 3,750 | 636 | 595 | 4,981 |
 | . (Files) | 1 | 1 | 0 | 0 | 1 |
 | day01 | 3 | 89 | 1 | 20 | 110 |
 | day02 | 11 | 236 | 33 | 38 | 307 |
@@ -31,6 +31,11 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | demo | 6 | 39 | 1 | 9 | 49 |
 | demo (Files) | 4 | 31 | 1 | 4 | 36 |
 | demo\\lib | 2 | 8 | 0 | 5 | 13 |
-| 进阶day01 | 9 | 351 | 57 | 58 | 466 |
+| 进阶day01 | 17 | 557 | 106 | 96 | 759 |
+| 进阶day02 | 13 | 534 | 81 | 106 | 721 |
+| 进阶day03 | 6 | 219 | 56 | 23 | 298 |
+| 进阶day04 | 13 | 741 | 104 | 73 | 918 |
+| 进阶day05 | 6 | 337 | 55 | 65 | 457 |
+| 进阶day06 | 3 | 104 | 14 | 13 | 131 |
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
