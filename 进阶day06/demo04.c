@@ -22,10 +22,10 @@ int main()
 {
     /* code */
     // 动态分配内存空间
-    struct S1 *ps = (struct S1*)malloc(sizeof(struct S1)+10*sizeof(int)); 
+    struct S1 *ps = (struct S1 *)malloc(sizeof(struct S1) + 10 * sizeof(int));
     // struct S1 s = {0};
     // printf("%d\n",sizeof(s)); // 4
-    struct S1 *p = (struct S1*)realloc(ps,sizeof(struct S1)+20*sizeof(int));
+    struct S1 *p = (struct S1 *)realloc(ps, sizeof(struct S1) + 20 * sizeof(int));
     if (p != NULL)
     {
         /* code */
@@ -40,7 +40,7 @@ int main()
     for (int j = 0; j < 10; j++)
     {
         /* code */
-        printf("%d ",ps->arr[j]);
+        printf("%d ", ps->arr[j]);
     }
     printf("\n");
     free(ps);
