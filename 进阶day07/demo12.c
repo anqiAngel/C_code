@@ -25,7 +25,9 @@ int main()
         ch = fgetc(fp);
         printf("%c\n", ch); // c
         // 返回相对于起始位置的偏移量
-        printf("%d\n", ftell(fp)); //
+        printf("%d\n", ftell(fp)); // 3
+        rewind(fp); // 返回到起始位置
+        printf("%d\n",ftell(fp)); // 0
     }
     fclose(fp);
     fp = NULL;
